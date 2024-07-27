@@ -5,10 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prathyusha's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <header class="header">
+    <div class="container">
+      <div class="header-links">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#profile" class="nav-link">Profile</a>
+        <a href="#work" class="nav-link">My Work</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </div>
+   </header>
+    
     <header>
         <div class="container">
             <h1>Prathyusha Reddy</h1>
@@ -43,18 +56,21 @@
             <p>A skilled software engineer with over two years of experience in designing, developing, and testing client-server and web applications using Java/JEE technologies. Proficient in Java, Spring, and Spring Boot, with a strong understanding of the SDLC. Holds a bachelor’s degree in Computer Science and is keen on learning and applying new technologies.</p>
         </div>
     </section>
-
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <p>Bachelor of Technology in Computer Science</p>
-            <p>SVS Group Of Institutions, Hanamkonda, Telangana</p>
-            <p>Graduated in July 2021</p>
+    
+    <section id="profile" class="profile d-flex align-items-start my-5">
+      <div class="profile-img" style="width: 20%;">
+        <img src="vinith.jpeg" alt="Profile Picture" class="img-fluid rounded-circle">
+      </div>
+      <div class="profile-info ml-4" style="width: 80%;">
+        <h2>About Me</h2>
+        <p>Aspiring MS in AI candidate at Yeshiva University with hands-on experience at Accenture, including client work for Vodafone. Proficient in Python, SQL, and R, eager to innovate and solve real-world challenges.</p>
+        <div class="profile-buttons mt-3">
+          <button class="btn btn-primary" onclick="showSection('skills')">Skills</button>
+          <button class="btn btn-primary" onclick="showSection('experience')">Experience</button>
+          <button class="btn btn-primary" onclick="showSection('education')">Education</button>
         </div>
-    </section>
 
-    <section id="skills">
-        <div class="container">
+        <div id="skills" class="profile-section mt-3" style="display: none;">
             <h2>Skills</h2>
             <ul>
                 <li>JEE Technologies: Core Java, Basics of Spring, Spring Boot, JSP, JDBC, Hibernate, Spring MVC</li>
@@ -64,10 +80,25 @@
                 <li>Operating Systems: Windows XP/7/8/8.1/10</li>
             </ul>
         </div>
-    </section>
+
+        <div id="experience" class="profile-section mt-3" style="display: none;">
+          <h3>Experience</h3>
+          <p><strong>Packaged App Development Associate</strong><br>
+            Accenture, Bangalore, India<br>
+            Oct 2022 - Oct 2023<br>
+            Contributed to customizing Vodafone applications by implementing AI-driven enhancements using SQL, Python, and NLTK to improve user experiences.</p>
+        </div>
+          
+        <div id="education" class="profile-section mt-3" style="display: none;">
+            <h2>Education</h2>
+            <p>Bachelor of Technology in Computer Science</p>
+            <p>SVS Group Of Institutions, Hanamkonda, Telangana</p>
+            <p>Graduated in July 2021</p>
+        </div>
+    
 
     <section id="projects">
-        <div class="container">
+        <div class="projects-container">
             <h2>Projects</h2>
             <div class="project">
                 <h3>FXF Rating Re-imagine Phase 1</h3>
@@ -92,6 +123,38 @@
             </div>
         </div>
     </section>
+    
+    <section id="contact" class="contact-section mt-5">
+      <h2>Contact</h2>
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> Email: chaduvuvinnu@gmail.com</p>
+        <p><i class="fas fa-phone"></i> Mobile: +1 6269495996</p>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/vinith-reddy-98353a190/" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/vinith-reddy" target="_blank" class="social-icon">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <form class="contact-form mt-4">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Your Email">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </section>
+  </main>
 
     <footer>
         <div class="container">
@@ -99,7 +162,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="rs.js"></script>
 </body>
 
 </html>
