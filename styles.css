@@ -28,6 +28,12 @@ header p {
     font-size: 1.2em;
 }
 
+nav a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
 section {
     padding: 1em;
     margin: 1em 0;
