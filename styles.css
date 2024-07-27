@@ -88,8 +88,8 @@ body {
   padding: 1rem;
   border-radius: 0.25rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  width: 400px; /* Adjust based on the desired width */
-  height: 600px; /* Adjust based on the desired height */
+  width: 800px; /* Adjust based on the desired width */
+  height: 1000px; /* Adjust based on the desired height */
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
