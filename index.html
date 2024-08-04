@@ -68,31 +68,35 @@
     
 
     <section id="work" class="projects-section">
-      <h2>My Work</h2>
-      <div class="projects-container">
-        <div class="project">
-                <h3>FXF Rating Re-imagine Phase 1</h3>
-                <p><strong>Duration:</strong> 1 year</p>
-                <p><strong>Description:</strong></p>
-                <ul>
-                    <li>This project involves three applications: Rating Rules Orchestrator, Rating Path Orchestrator, and Legacy Adopter.</li>
-                    <li>The Rating Rules Orchestrator validates incoming requests from the FXF gateway, calls various services through RESTful web services, and processes the responses.</li>
-                    <li>The Legacy Adopter calls the E4YC Model, converts the model to JSON and back, and processes the responses further.</li>
-                </ul>
-                <p><strong>Technologies Used:</strong> Core Java, Spring with Hibernate, Oracle</p>
-                <p><strong>Frameworks:</strong> Spring Boot, Hibernate</p>
-                <p><strong>Database:</strong> Oracle</p>
-                <p><strong>IDE Tool:</strong> Eclipse</p>
-                <p><strong>Role:</strong> Software Developer</p>
-                <ul>
-                    <li>Developed and maintained application components, including Spring Controllers, Services, and DAO classes.</li>
-                    <li>Implemented business logic and ensured functional and performance compliance.</li>
-                    <li>Wrote code for CRUD operations and implemented client-side validations using JavaScript.</li>
-                    <li>Contributed to building, deploying, and maintaining code on the server.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+  <h2>My Work</h2>
+  <div class="projects-container">
+    <div class="project">
+      <h3>FXF Rating Re-imagine Phase 1</h3>
+      <p><strong>Role:</strong> Developer</p>
+      <p><strong>Environment:</strong> Java, MySQL, Spring MVC, JSP, Apache Tomcat</p>
+      <p><strong>Client:</strong> FedEx</p>
+      <p><strong>Duration:</strong> 1 year</p>
+      <p><strong>Domain:</strong> Logistics</p>
+      <p><strong>Team Size:</strong> 12</p>
+      <p><strong>Project Description:</strong></p>
+      <ul>
+        <li>This project consists of three applications: Rating Rules Orchestrator, Rating Path Orchestrator, and Legacy Adopter.</li>
+        <li>The Rating Rules Orchestrator has a validator PGA and accepts incoming requests from the FXF gateway. It calls several services (Base rate, Dynamic fuel surcharge, DS) through RESTful web services and receives the response.</li>
+        <li>If the response is ratable, it sends it to the Rating Path. If it is not ratable, it sends it to Legacy for further processing.</li>
+        <li>The Legacy Adopter calls the E4YC Model and acts as a validator. It is responsible for converting the model to JSON and JSON to model conventions. The response is then sent back to the Rating Path for further processing.</li>
+      </ul>
+      <p><strong>Roles and Responsibilities:</strong></p>
+      <ul>
+        <li>Developed a Rating Rules Orchestrator application, using a Controller to handle HTTP POST requests at /api/rating and route them to the service layer.</li>
+        <li>Implemented a Service that validates requests, calls external RESTful services using Rest Template, and processes responses. Integrated Rest Template to fetch data from services like Base Rate and Dynamic Fuel Surcharge.</li>
+        <li>Implemented Response Processing to forward ratable responses to the Rating Path and non-ratable responses to the Legacy Adopter.</li>
+        <li>Configured Rest Template and implemented basic request validation within the Spring Boot application.</li>
+        <li>Participated in scheduled meetings with the client to understand the business requirements, attended scrum meetings, and grooming sessions.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
     
     <section id="contact" class="contact-section mt-5">
       <h2>Contact</h2>
